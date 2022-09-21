@@ -1,0 +1,16 @@
+{
+  "name": "dg-astro",
+  "version": "0.0.0-development",
+  "description": "Astro based exploration for dg",
+  "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgattey/dg-astro.git"
+  },
+  "author": "Dylan Gattey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dgattey/dg-astro/issues"
+  },
+  "homepage": "https://github.com/dgattey/dg-astro#readme"
+}
