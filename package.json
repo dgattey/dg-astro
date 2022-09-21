@@ -1,5 +1,6 @@
 {
   "name": "dg-astro",
+  "type": "module",
   "version": "0.0.0-development",
   "description": "Astro based exploration for dg",
   "main": "index.ts",
@@ -12,5 +13,20 @@
   "bugs": {
     "url": "https://github.com/dgattey/dg-astro/issues"
   },
-  "homepage": "https://github.com/dgattey/dg-astro#readme"
+  "homepage": "https://github.com/dgattey/dg-astro#readme",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write --plugin-search-dir=. ."
+  },
+  "dependencies": {
+    "astro": "^1.2.8"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "prettier-plugin-astro": "^0.5.4"
+  }
 }
