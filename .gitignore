@@ -1,6 +1,8 @@
 # build output
 dist/
 .output/
+tsconfig.tsbuildinfo
+.eslintcache
 
 # dependencies
 node_modules/
