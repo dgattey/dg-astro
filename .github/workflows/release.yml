@@ -1,0 +1,27 @@
+# Releases a new version on a push to main
+name: Release
+on:
+  push:
+    branches:
+      - main
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - uses: pnpm/action-setup@v2.2.2
+      - run: pnpm install
+      - name: Release new repo version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: pnpm release
+      - uses: actions-ecosystem/action-get-latest-tag@v1
+        name: Get latest version tag
+        with:
+          semver_only: true
+        id: latest-version-tag
+      # TODO: @dgattey release a new version on Cloudflare with it?
