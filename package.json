@@ -17,8 +17,8 @@
     "prepare": "husky install",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
-    "preview": "wrangler pages dev ./dist",
+    "build": "astro build --experimental-integrations",
+    "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write --plugin-search-dir=. .",
     "lint": "eslint . --cache --fix --ext .js,.ts,.astro",
@@ -26,32 +26,33 @@
     "release": "semantic-release"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "2.0.0",
-    "@astrojs/image": "0.7.1",
-    "@astrojs/partytown": "1.0.0",
-    "@astrojs/preact": "1.1.0",
-    "@astrojs/prefetch": "0.0.7",
+    "@astrojs/cloudflare": "3.0.0",
+    "@astrojs/partytown": "1.0.1",
+    "@astrojs/preact": "1.2.0",
+    "@astrojs/prefetch": "0.0.8",
     "@astrojs/sitemap": "1.0.0",
-    "astro": "1.2.8",
-    "preact": "10.11.0"
+    "astro": "1.4.7",
+    "preact": "10.11.1",
+    "preact-render-to-string": "5.2.5"
   },
   "devDependencies": {
     "@commitlint/cli": "17.1.2",
     "@commitlint/config-conventional": "17.1.0",
     "@semantic-release/changelog": "6.0.1",
     "@types/node": "16.11.7",
-    "@typescript-eslint/eslint-plugin": "5.38.0",
-    "@typescript-eslint/parser": "5.38.0",
-    "eslint": "8.23.1",
-    "eslint-plugin-astro": "0.19.0",
+    "@typescript-eslint/eslint-plugin": "5.40.0",
+    "@typescript-eslint/parser": "5.40.0",
+    "astro-compress": "1.0.11",
+    "astro-robots-txt": "0.3.10",
+    "eslint": "8.25.0",
+    "eslint-plugin-astro": "0.20.0",
     "eslint-plugin-jsx-a11y": "6.6.1",
     "husky": "8.0.1",
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",
-    "prettier-plugin-astro": "0.5.4",
+    "prettier-plugin-astro": "0.5.5",
     "semantic-release": "19.0.5",
-    "typescript": "4.8.3",
-    "wrangler": "2.1.6"
+    "typescript": "4.8.4"
   },
   "engines": {
     "node": ">=16"
