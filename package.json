@@ -18,7 +18,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build --experimental-integrations",
-    "preview": "wrangler pages dev ./dist",
+    "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write --plugin-search-dir=. .",
     "lint": "eslint . --cache --fix --ext .js,.ts,.astro",
@@ -32,11 +32,8 @@
     "@astrojs/prefetch": "0.0.8",
     "@astrojs/sitemap": "1.0.0",
     "astro": "1.4.7",
-    "astro-imagetools": "0.6.11",
-    "image-size": "1.0.2",
     "preact": "10.11.1",
-    "preact-render-to-string": "5.2.5",
-    "sharp": "0.31.1"
+    "preact-render-to-string": "5.2.5"
   },
   "devDependencies": {
     "@commitlint/cli": "17.1.2",
@@ -55,8 +52,7 @@
     "prettier": "2.7.1",
     "prettier-plugin-astro": "0.5.5",
     "semantic-release": "19.0.5",
-    "typescript": "4.8.4",
-    "wrangler": "2.1.11"
+    "typescript": "4.8.4"
   },
   "engines": {
     "node": ">=16"
