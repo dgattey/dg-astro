@@ -3,3 +3,5 @@
 node_modules/
 **/*.generated.*
 **/generated/*
+dist
+eslint-plugin-dg/types.d.ts
