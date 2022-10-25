@@ -1,17 +1,22 @@
 ---
-import Meta from "components/Meta";
 import PageLayout from "layouts/PageLayout";
+import AppStyle from "components/AppStyle";
+import Meta from "components/Meta";
 
 export interface Props {
   title?: string;
-  pageUrl: string;
   description?: string;
 }
+
+const pageUrl = Astro.url.pathname;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  <Meta {...Astro.props} />
+  <head>
+    <Meta {...Astro.props} pageUrl={pageUrl} />
+    <AppStyle />
+  </head>
   <body>
     <PageLayout><slot /></PageLayout>
   </body>

@@ -99,6 +99,13 @@ const ASTRO_OVERRIDE = {
   },
 };
 
+const JS_OVERRIDE = {
+  files: ["**/*.js"],
+  extends: BASE_EXTENSIONS,
+  plugins: BASE_PLUGINS,
+  rules: BASE_RULES,
+};
+
 module.exports = {
   env: {
     browser: true,
@@ -116,5 +123,10 @@ module.exports = {
   plugins: BASE_PLUGINS,
   reportUnusedDisableDirectives: true,
   rules: BASE_RULES,
-  overrides: [TYPESCRIPT_OVERRIDE, SCRIPTS_OVERRIDE, ASTRO_OVERRIDE],
+  overrides: [
+    TYPESCRIPT_OVERRIDE,
+    SCRIPTS_OVERRIDE,
+    ASTRO_OVERRIDE,
+    JS_OVERRIDE,
+  ],
 };

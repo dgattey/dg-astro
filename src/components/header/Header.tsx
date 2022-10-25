@@ -1,4 +1,5 @@
-import { styled } from "@stitches/react";
+import { styled } from "stitches";
+import Logo from "components/header/Logo";
 
 interface Props {
   /**
@@ -16,7 +17,9 @@ const StickyContainer = styled("section", {
   "pointer-events": "none",
 });
 
-const LogoHolder = styled("li");
+const LogoHolder = styled("li", {
+  padding: 0,
+});
 
 /**
  * Creates the site header component. It's a bar that spans across the
@@ -27,7 +30,9 @@ const Header = ({ headerRef }: Props) => (
     <header ref={headerRef}>
       <nav>
         <ul>
-          <LogoHolder>dg.</LogoHolder>
+          <LogoHolder>
+            <Logo currentPath="/" />
+          </LogoHolder>
         </ul>
       </nav>
     </header>

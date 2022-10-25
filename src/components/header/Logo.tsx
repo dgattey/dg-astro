@@ -1,8 +1,8 @@
-import { useContext } from "react";
-import { styled } from "@stitches/react";
-import ScrollIndicatorContext from "components/ScrollIndicatorContext";
 import Stack from "components/ui/Stack";
 import Link from "components/Link";
+import { styled } from "../../stitches";
+import ScrollIndicatorContext from "components/ScrollIndicatorContext";
+import { useContext } from "react";
 
 interface Props {
   /**
@@ -79,6 +79,7 @@ const Logo = ({ currentPath }: Props) => {
         dg.
       </Link>
     );
+
   return (
     <Stack css={{ alignItems: "flex-start" }}>
       <LogoText isScrolled={isScrolled}>{linkedLogoText}</LogoText>
