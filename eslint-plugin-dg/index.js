@@ -10,13 +10,8 @@ const PLUGIN_NAME = "dg";
  * 3. Run `pnpm lint` on failing code and make sure it picks up the error! Run `pnpm install` if it doesn't show up
  */
 
-// All possible rules we check for
 const rules = {
-  /**
-   * We have safer versions of useQuery, useMutation and useLazyQuery that have built in
-   * error handling so make sure we use those instead of the raw apollo versions.
-   */
-  "no-raw-fontawesome": require("./no-raw-fontawesome.js"),
+  "no-restricted-packages": require("./no-restricted-packages.js"),
 };
 
 // Make sure we include all rules defined above as errors

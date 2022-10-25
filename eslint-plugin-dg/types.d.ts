@@ -22,6 +22,10 @@ export type Context = Parameters<Create>[0];
  */
 export type RuleListener = ReturnType<Create>;
 
+export type ImportDeclaration = Parameters<
+  NonNullable<RuleListener["ImportDeclaration"]>
+>[0];
+
 /**
  * The main argument passed to `context.report`, with loc undefined to
  * allow us to always use `node`
