@@ -16,9 +16,7 @@ const StickyContainer = styled("section", {
   "pointer-events": "none",
 });
 
-const LogoHolder = styled("li", {
-  padding: 0,
-});
+const LogoHolder = styled("li");
 
 /**
  * Creates the site header component. It's a bar that spans across the
