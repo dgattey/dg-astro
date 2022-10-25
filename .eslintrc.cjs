@@ -93,7 +93,10 @@ const ASTRO_OVERRIDE = {
   parserOptions: {
     extraFileExtensions: [".astro"],
   },
-  rules: BASE_RULES,
+  rules: {
+    ...BASE_RULES,
+    "react/no-unknown-property": ["error", { ignore: ["class"] }],
+  },
 };
 
 module.exports = {

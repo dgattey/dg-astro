@@ -1,23 +1,18 @@
 ---
-import AppStyle from "components/AppStyle";
+import Meta from "components/Meta";
+import PageLayout from "layouts/PageLayout";
 
 export interface Props {
-  title: string;
+  title?: string;
+  pageUrl: string;
+  description?: string;
 }
-
-const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{title}</title>
-    <AppStyle />
-  </head>
+  <Meta {...Astro.props} />
   <body>
-    <slot />
+    <PageLayout><slot /></PageLayout>
   </body>
 </html>
