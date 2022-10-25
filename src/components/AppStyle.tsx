@@ -1,7 +1,5 @@
-import { getCssText } from "../../stitches.config";
-
 import "@picocss/pico/css/pico.min.css";
-import { css, globalCss } from "@stitches/react";
+import { css, globalCss, getCssText } from "stitches";
 
 /**
  * Variables specific to dark mode. Anything that appears here needs to have

@@ -6,7 +6,7 @@ import { faSpotify } from "@fortawesome/free-brands-svg-icons/faSpotify";
 import { faStrava } from "@fortawesome/free-brands-svg-icons/faStrava";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons/faPaperPlane";
 import { faQuestion } from "@fortawesome/free-solid-svg-icons/faQuestion";
-import { styled } from "@stitches/react";
+import { styled } from "stitches";
 
 /**
  * Renders as a certain type of layout.

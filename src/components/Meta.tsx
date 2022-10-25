@@ -1,5 +1,3 @@
-import AppStyle from "components/AppStyle";
-
 interface Props {
   /**
    * Tab/window title that shows in a browser
@@ -125,7 +123,7 @@ const Meta = ({ title, description, pageUrl }: Props) => {
     : "%20";
 
   return (
-    <head>
+    <>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width" />
       <meta key="og:site_name" property="og:site_name" content={SITE_NAME} />
@@ -164,8 +162,7 @@ const Meta = ({ title, description, pageUrl }: Props) => {
       {Object.values(ICONS).flatMap(({ variants, element }) =>
         variants.map((variant) => element(String(variant)))
       )}
-      <AppStyle />
-    </head>
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
+/* eslint-disable dg/no-restricted-packages */
 import { createStitches } from "@stitches/react";
 
-export const { getCssText } = createStitches({
+export const { getCssText, styled, css, globalCss } = createStitches({
   theme: {
     space: {
       1: "4px",

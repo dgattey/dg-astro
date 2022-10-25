@@ -1,4 +1,4 @@
-import { styled } from "@stitches/react";
+import { styled } from "stitches";
 import Link from "components/Link";
 
 // Switches to two rows for mobile
